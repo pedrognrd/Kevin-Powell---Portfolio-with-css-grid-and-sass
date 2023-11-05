@@ -27,4 +27,3 @@ return gulp.src('./scss/**/*.scss')
 
 // default will also watch
 gulp.task('default', ['watch']);
-
