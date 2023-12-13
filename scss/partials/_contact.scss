@@ -1,0 +1,78 @@
+.contact {
+    @include container;
+    padding: 5em 0;
+
+    h1 {
+        text-align: center;
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+
+    @supports (display: grid) {
+        .message {
+            grid-area: message;
+            textarea {
+                height: 6em;
+            }
+        }
+        @include mq {
+            display: grid;
+            grid-column-gap: 1em;
+            grid-template-areas: 
+                "name    email"
+                "message message"
+                "   .    button";
+
+            .name {
+                grid-area: name;
+            }
+
+            .email {
+                grid-area: email;
+            }
+
+            .message {
+                grid-area: message;
+                textarea {
+                    height: 10em;
+                }
+            }
+
+            .button {
+                grid-area: button;
+            }
+        }
+    }
+}
+
+label {
+    display: block;
+    margin-top: 1em;
+    color: $dark-gray;
+}
+
+input, textarea {
+    // The CSS box-sizing property allows us to include the padding and border in an element's total width and height.
+    box-sizing: border-box;
+    display: block;
+    padding: .75em;
+    width: 100%;
+    background: lighten($light-gray, 8%);
+    border: 1px solid $light-gray;
+    font-size: 1.2rem;
+}
+
+.button {
+    display: inline-block;
+    width: auto;
+    margin-top: 1em;
+    // because form is a flex element with column direction, margin left moves to the right botton
+    margin-left: auto;
+    background: $accent;
+    border: none;
+    @include sans-serif($fs: 2.5rem, $color: $white);
+    padding: .5em 1.5em;
+}

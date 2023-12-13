@@ -8,19 +8,19 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-<div class="hero">
+<div class="welcome">
   <h1>Welcome to my<span>Portfolio</span></h1>
 </div>
 
-<section class="welcome">
-  <div class="welcome-left">
+<section class="intro">
+  <div class="intro-left">
     <img src="img/welcome-01.png" alt="a laptop on a wood table">
   </div>
-  <div class="welcome-middle">
+  <div class="intro-middle">
     <h2>Making it happen</h2>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum ipsa dolores aperiam aliquam, enim numquam nisi ad doloribus incidunt recusandae ab, perspiciatis adipisci, eum explicabo ut asperiores et mollitia laudantium.</p>  
   </div>
-  <div class="welcome-right">
+  <div class="intro-right">
     <img src="img/welcome-02.png" alt="two computer and a laptop on a table">
   </div>
 </section>
@@ -29,7 +29,7 @@
   <img class="about-img" src="img/joe-portfolio.png" alt="A picture of Joe Portfolio">
   <h1 class="about-title">Joe Portfolio</h1>
   <h2 class="about-subtitle">Designer & Developer</h2>
-  <div class="aobut-text">
+  <div class="about-text">
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptates maxime? Iste reiciendis est quae impedit, voluptatibus qui molestiae voluptates eligendi ipsa nam molestias quam magni saepe delectus dignissimos expedita! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, voluptates maxime? Iste reiciendis est quae impedit, voluptatibus qui molestiae voluptates eligendi ipsa nam molestias quam magni saepe delectus dignissimos expedita!</p>
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores aut esse unde odio adipisci harum accusamus maiores dicta recusandae aspernatur possimus voluptas quo porro pariatur dolor expedita, laboriosam maxime a? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo accusantium praesentium repellendus beatae soluta optio ratione dolorum placeat iste. Asperiores dignissimos distinctio nisi fugiat quibusdam ratione ab ullam esse soluta.</p>
   </div>
@@ -41,7 +41,7 @@
 
     <div class="portfolio-items">
       <!-- Portfolio item 1 -->
-      <figure class="portfolio-item featured">
+      <figure class="portfolio-item">
         <img src="img/portfolio-01.jpg" alt="portfolio item">
         <figcaption>
           <h2 class="portfolio-title">Project Name</h2>
@@ -59,7 +59,7 @@
         </figcaption>
       </figure>
       <!-- Portfolio item 3 -->
-      <figure class="portfolio-item">
+      <figure class="portfolio-item featured">
         <img src="img/portfolio-03.jpg" alt="portfolio item">
         <figcaption>
           <h2 class="portfolio-title">Project Name</h2>
@@ -98,9 +98,11 @@
     <label class="email">Email:
       <input type="email" id="email">
     </label>
-    <label message="message">Message:
+    <label message="message" class="message">Message:
       <textarea name="" id="message"></textarea>
     </label>
+
+    <input class="button form-button" type="submit" value="SEND">
   </form>
 </section>
 
